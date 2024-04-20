@@ -21,7 +21,7 @@ with open('positive_integers.csv', 'r') as file:
     
     next(reader)
     
-    with open('odd_numbers.csv', 'w') as output_file:
+    with open('odd_numbers.csv', 'w', newline="") as output_file:
         writer = csv.writer(output_file)
         
         header = ['Odd Numbers']
