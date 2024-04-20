@@ -16,7 +16,7 @@ import csv
 
 # || ACTUAL CODES ||
 # - Opening the file.
-with open('python_file_handling\positive_integers.csv', 'r') as file:
+with open('positive_integers.csv', 'r') as file:
     reader = csv.reader(file)
     
     next(reader)
@@ -24,5 +24,11 @@ with open('python_file_handling\positive_integers.csv', 'r') as file:
     with open('odd_numbers.csv', 'w') as output_file:
         writer = csv.writer(output_file)
         
+        header = ['Odd Numbers']
+        
+        writer.writerow(header)
+        
+        for line in reader:
+            writer.writerow([line[0]])
         
 # - For loop code
