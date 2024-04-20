@@ -5,7 +5,10 @@
 # --------------------------------------------
 
 # ========== PSEUDO CODE ===========
-# || LIBRARIES \ PACKAGES
+# || LIBRARIES \ PACKAGES ||
+
+# || IMPORTS || 
+import csv
 
 # || VARIABLES || 
 
@@ -13,4 +16,13 @@
 
 # || ACTUAL CODES ||
 # - Opening the file.
+with open('python_file_handling\positive_integers.csv', 'r') as file:
+    reader = csv.reader(file)
+    
+    next(reader)
+    
+    with open('odd_numbers.csv', 'w') as output_file:
+        writer = csv.writer(output_file)
+        
+        
 # - For loop code
