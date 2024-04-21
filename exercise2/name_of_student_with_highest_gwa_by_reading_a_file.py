@@ -19,6 +19,9 @@ max_student = None
 with open('students_grade_info.csv', 'r') as file:
     reader = csv.reader(file)
     
+    # Skip the header row
+    next(reader)
+
 # - Reading the rows and find the student who has a highest GWA.
     for row in reader:
         name, gwa = row[0], float(row[1])
