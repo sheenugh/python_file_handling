@@ -13,7 +13,7 @@ import csv
 # || ACTUAL CODES ||
 # - FOR ODD NUMBERS
 # - Opening the file.
-with open('python_file_handling\positive_integers.csv', 'r') as file:
+with open('positive_integers.csv', 'r') as file:
     reader = csv.reader(file)
     
     # - Removing the header while reading the file.
@@ -32,7 +32,7 @@ with open('python_file_handling\positive_integers.csv', 'r') as file:
             
 # - FOR EVEN NUMBERS
 # - Opening the file.
-with open('python_file_handling\positive_integers.csv', 'r') as file:
+with open('positive_integers.csv', 'r') as file:
     reader = csv.reader(file)
     
     # - Removing the header while reading the file.
