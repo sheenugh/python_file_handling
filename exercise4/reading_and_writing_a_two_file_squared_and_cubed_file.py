@@ -15,26 +15,17 @@ import csv
 # || ACTUAL CODES ||
 # - Opening the file and reading the file.
 def process_integers():
-    with open("positive_integers_file.cs", "r") as file:
-        reader = csv.reader(file)
+    with open("integers.txt", "r") as file:
+        integers = [int(line.strip()) for line in file.readlines()[:20]]
     
-    # Loop through the rows in the CSV file
-        integers = [int(row[0]) for row in reader[:20]]
-
-# - Writing a file: squared_integers and cubed_integers.
-    with open("triple.csv", "w", newline="") as output1, open("doubled.csv", "w", newline="") as output2:
-        tripled_file = csv.writer(output1)
-        doubled_file = csv.writer(output2)
+# - Writing a file: double_integers and triple_integers.
+with open("double.txt", "w") as output1, open("triple.txt", "w") as output2:
+    for num in integers:
         
-# Loop through the integers
-        for num in integers:
-            # Check if the number is even
-            if num % 2 == 0:
-                # Write the square of the number to the double.csv file
-                doubled_file.writerow([num ** 2])
-            else:
-                # Write the cube of the number to the triple.csv file
-                tripled_file.writerow([num ** 3])v
+        
+
+
+
 
 # Call the function
 process_integers()
