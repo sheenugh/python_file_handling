@@ -16,7 +16,7 @@ max_student = None
 
 # || ACTUAL CODES ||
 # - Open and reading the csv file.
-with open('python_file_handling\exercise2\students_grade_info.csv', 'r') as file:
+with open('students_grade_info.csv', 'r') as file:
     reader = csv.reader(file)
     
 # - Reading the rows and find the student who has a highest GWA.
@@ -27,3 +27,4 @@ with open('python_file_handling\exercise2\students_grade_info.csv', 'r') as file
             max_student = name
 
 # - Printing the output containing the student name and his/her highest GWA.
+print(f'The student with the highest GWA is {max_student} with a GWA of {max_gwa}')
