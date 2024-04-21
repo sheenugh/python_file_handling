@@ -1,6 +1,6 @@
 # Delima, Sheena Mae Delima
 # BSCPE 1-2
-# April 20, 2024
+# April 21, 2024
 
 # --------------------------------------------
 
@@ -20,7 +20,6 @@ user_mentor_in_programming = input("Enter who taught you this file handling so e
 
 # || ACTUAL CODE ||
 # - Stored data of various questions.
-
 life_data = {
     "Name" : user_name,
     "Age" : user_age,
