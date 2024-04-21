@@ -30,6 +30,11 @@ life_data = {
     "Programming Mentor" : user_mentor_in_programming
 }
 
+# - Read the 'life_data' 
+content = json.dumps(life_data)
+
+print(content)
+
 # - Code for creating a new JSON file
 with open("user_info", "w") as output_file:
     output_file()
