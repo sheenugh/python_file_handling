@@ -16,9 +16,12 @@ def squared_and_cubed_numbers_from_src():
         for num in integers:
             if num % 2 == 0:
                 output1.write(f'{num * num}\n')
-        else:
+                
+            
+        for num in integers:
+            if num % 2 != 0:
                 # Write the cube of the number to the triple.txt file
-                output2.write(f'{num * num * num}\n')
+                output2.write(f'{num ** 3}\n')
 
 # Call the function
 squared_and_cubed_numbers_from_src()
