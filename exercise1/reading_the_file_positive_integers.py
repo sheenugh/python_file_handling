@@ -15,7 +15,7 @@ import csv
 # || ACTUAL CODES ||
 # - FOR ODD NUMBERS
 # - Opening the file.
-with open('python_file_handling\exercise1\positive_integers_file.csv', 'r') as file:
+with open('positive_integers_file.csv', 'r') as file:
     reader = csv.reader(file)
     
     # - Removing the header while reading the file.
@@ -34,14 +34,14 @@ with open('python_file_handling\exercise1\positive_integers_file.csv', 'r') as f
             
 # - FOR EVEN NUMBERS
 # - Opening the file.
-with open('python_file_handling\exercise1\positive_integers_file.csv', 'r') as file:
+with open('positive_integers_output.csv', 'r') as file:
     reader = csv.reader(file)
     
     # - Removing the header while reading the file.
     next(reader) 
     
     # - Creating a csv file for the output.
-    with open('even_numbers_output.csv', 'w', newline="") as output_file:
+    with open('even_numbers.csv', 'w', newline="") as output_file:
         writer = csv.writer(output_file)
         
         header = ['Even Numbers']
