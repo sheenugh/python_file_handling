@@ -37,4 +37,4 @@ print(content)
 
 # - Code for creating a new JSON file
 with open("user_info", "w") as output_file:
-    output_file()
+    output_file.write(content)
