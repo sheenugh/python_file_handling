@@ -31,7 +31,7 @@ life_data = {
 }
 
 # - Read the 'life_data' 
-content = json.dumps(life_data)
+content = json.dumps(life_data, indent=2)
 
 print(content)
 
